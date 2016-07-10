@@ -1,0 +1,32 @@
+<html>
+<head>
+	<style>
+	#avis_box {
+		display: block;
+		position: relative;
+		left:0px;
+		height:50px;
+		width:125px;
+		border:3px solid orange;
+		background-color: green
+	}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#animate_button").click(function(){
+		  $("#avis_box").animate({
+		    opacity: 0.2,
+		    left: "+=50",
+		  }, 1000);
+		});
+	})
+	</script>
+</head>
+
+<body>
+
+	<button id="animate_button">Animate Button</button>
+	<div id="avis_box">butt heading butting ton box</div>
+
+</html>

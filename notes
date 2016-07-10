@@ -1,0 +1,26 @@
+xcode-select --install
+
+HOMEBREW Homebrew installs packages to their own directory and then symlinks their files into /usr/local.
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update (create, edit, doctor)
+brew install wget
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl/certs
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+/usr/local/Library/Formula are simple Ruby scripts
+
+NODE
+There are several different installation instructions using Homebrew and other methods but the easiest is to install the Mac Installer Package straight from Node.js. Once it is downloaded, open the package and follow the instructions. The default installation path is /usr/local/bin/node but you can change that to the path of your choosing. The great thing about the Mac Installer Package is that it also installs Node Package Manager (npm) which, in the past, used to be a separate install. The default installation path for npm is /usr/local/bin/npm. http://nodejs.org/download/
+
+node -v
+brew install node
+mkdir basic; cd basic;
+npm init #create a package.json file for you
+server.js < "console.log('May you be Safe")
+node server.js
+npm install express --save
+
+npm install nodemon --save-dev 
+alias nodem="./node_modules/.bin/nodemon server.js"
